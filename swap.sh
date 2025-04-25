@@ -6,7 +6,7 @@ mem_kb=$(grep MemTotal /proc/meminfo | awk '{print $2}')
 mem_mb=$(( mem_kb / 1024 ))
 
 # 2. 计算 swap 大小为物理内存的 1.5 倍（向上取整）
-swap_mb=$(( (mem_mb * 3 + 1) / 2 ))
+swap_mb=$(( mem_mb * 2 ))
 
 echo "物理内存：${mem_mb}MB，计划创建 swap：${swap_mb}MB"
 
