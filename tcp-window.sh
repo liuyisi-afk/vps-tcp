@@ -17,7 +17,7 @@ kernel.msgmnb=65536
 kernel.msgmax=65536
 kernel.shmmax=68719476736
 kernel.shmall=4294967296
-vm.swappiness=200
+vm.swappiness=65
 net.core.rps_sock_flow_entries=65536
 
 # 文件系统参数
